@@ -10,7 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SqlSugar" Version="5.1.4.207" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.4.214" />
     <PackageReference Include="SunnyUI" Version="3.9.3" />
   </ItemGroup>
 

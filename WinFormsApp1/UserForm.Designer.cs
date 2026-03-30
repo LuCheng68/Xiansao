@@ -28,14 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
             uiGroupBox4 = new Sunny.UI.UIGroupBox();
             uiDataGridView1 = new Sunny.UI.UIDataGridView();
+            selectCheck = new DataGridViewCheckBoxColumn();
+            UserName = new DataGridViewTextBoxColumn();
+            Account = new DataGridViewTextBoxColumn();
+            IoManage = new DataGridViewTextBoxColumn();
+            CameraManage = new DataGridViewTextBoxColumn();
+            LogManage = new DataGridViewTextBoxColumn();
+            UserManage = new DataGridViewTextBoxColumn();
+            CountManage = new DataGridViewTextBoxColumn();
+            Password = new DataGridViewTextBoxColumn();
+            Uid = new DataGridViewTextBoxColumn();
+            Aid = new DataGridViewTextBoxColumn();
             flowLayoutPanel1 = new FlowLayoutPanel();
             uiGroupBox2 = new Sunny.UI.UIGroupBox();
             uiTextBox4 = new Sunny.UI.UITextBox();
@@ -50,17 +61,6 @@
             uiButton1 = new Sunny.UI.UIButton();
             uiTextBox1 = new Sunny.UI.UITextBox();
             uiTextBox2 = new Sunny.UI.UITextBox();
-            selectCheck = new DataGridViewCheckBoxColumn();
-            UserName = new DataGridViewTextBoxColumn();
-            Account = new DataGridViewTextBoxColumn();
-            IoManage = new DataGridViewTextBoxColumn();
-            CameraManage = new DataGridViewTextBoxColumn();
-            LogManage = new DataGridViewTextBoxColumn();
-            UserManage = new DataGridViewTextBoxColumn();
-            CountManage = new DataGridViewTextBoxColumn();
-            Password = new DataGridViewTextBoxColumn();
-            Uid = new DataGridViewTextBoxColumn();
-            Aid = new DataGridViewTextBoxColumn();
             uiGroupBox1.SuspendLayout();
             uiGroupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)uiDataGridView1).BeginInit();
@@ -104,54 +104,168 @@
             // 
             uiDataGridView1.AllowUserToAddRows = false;
             uiDataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(235, 243, 255);
-            uiDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            uiDataGridView1.BackgroundColor = Color.White;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(243, 249, 255);
+            uiDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            uiDataGridView1.AutoScrollToBottom = true;
+            uiDataGridView1.BackgroundColor = Color.FromArgb(243, 249, 255);
             uiDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle2.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            uiDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle7.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            dataGridViewCellStyle7.ForeColor = Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            uiDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             uiDataGridView1.ColumnHeadersHeight = 32;
             uiDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             uiDataGridView1.Columns.AddRange(new DataGridViewColumn[] { selectCheck, UserName, Account, IoManage, CameraManage, LogManage, UserManage, CountManage, Password, Uid, Aid });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Window;
-            dataGridViewCellStyle3.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            uiDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.White;
+            dataGridViewCellStyle8.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            dataGridViewCellStyle8.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(220, 236, 255);
+            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            uiDataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
             uiDataGridView1.Dock = DockStyle.Fill;
             uiDataGridView1.EnableHeadersVisualStyles = false;
             uiDataGridView1.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            uiDataGridView1.GridColor = Color.FromArgb(80, 160, 255);
+            uiDataGridView1.GridColor = Color.FromArgb(104, 173, 255);
             uiDataGridView1.Location = new Point(0, 32);
             uiDataGridView1.Name = "uiDataGridView1";
             uiDataGridView1.ReadOnly = true;
             uiDataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(235, 243, 255);
-            dataGridViewCellStyle4.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(48, 48, 48);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(80, 160, 255);
-            dataGridViewCellStyle4.SelectionForeColor = Color.White;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            uiDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.FromArgb(243, 249, 255);
+            dataGridViewCellStyle9.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            dataGridViewCellStyle9.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(80, 160, 255);
+            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            uiDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             uiDataGridView1.RowHeadersVisible = false;
             uiDataGridView1.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.BackColor = Color.White;
-            dataGridViewCellStyle5.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            uiDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.BackColor = Color.White;
+            dataGridViewCellStyle10.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            dataGridViewCellStyle10.ForeColor = Color.FromArgb(48, 48, 48);
+            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(220, 236, 255);
+            dataGridViewCellStyle10.SelectionForeColor = Color.FromArgb(48, 48, 48);
+            uiDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle10;
             uiDataGridView1.SelectedIndex = -1;
             uiDataGridView1.Size = new Size(909, 553);
-            uiDataGridView1.StripeOddColor = Color.FromArgb(235, 243, 255);
             uiDataGridView1.TabIndex = 0;
+            // 
+            // selectCheck
+            // 
+            selectCheck.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            selectCheck.HeaderText = "选择";
+            selectCheck.MinimumWidth = 75;
+            selectCheck.Name = "selectCheck";
+            selectCheck.ReadOnly = true;
+            selectCheck.Width = 93;
+            // 
+            // UserName
+            // 
+            UserName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            UserName.DataPropertyName = "UserName";
+            UserName.HeaderText = "姓名";
+            UserName.MinimumWidth = 50;
+            UserName.Name = "UserName";
+            UserName.ReadOnly = true;
+            // 
+            // Account
+            // 
+            Account.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            Account.DataPropertyName = "Account";
+            Account.HeaderText = "账号";
+            Account.MinimumWidth = 120;
+            Account.Name = "Account";
+            Account.ReadOnly = true;
+            Account.Width = 120;
+            // 
+            // IoManage
+            // 
+            IoManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            IoManage.DataPropertyName = "IoManage";
+            IoManage.HeaderText = "IO管理";
+            IoManage.MinimumWidth = 120;
+            IoManage.Name = "IoManage";
+            IoManage.ReadOnly = true;
+            IoManage.Width = 120;
+            // 
+            // CameraManage
+            // 
+            CameraManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            CameraManage.DataPropertyName = "CameraManage";
+            CameraManage.HeaderText = "相机管理";
+            CameraManage.MinimumWidth = 120;
+            CameraManage.Name = "CameraManage";
+            CameraManage.ReadOnly = true;
+            CameraManage.Width = 120;
+            // 
+            // LogManage
+            // 
+            LogManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            LogManage.DataPropertyName = "LogManage";
+            LogManage.HeaderText = "日志管理";
+            LogManage.MinimumWidth = 120;
+            LogManage.Name = "LogManage";
+            LogManage.ReadOnly = true;
+            LogManage.Width = 120;
+            // 
+            // UserManage
+            // 
+            UserManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            UserManage.DataPropertyName = "UserManage";
+            UserManage.HeaderText = "用户管理";
+            UserManage.MinimumWidth = 120;
+            UserManage.Name = "UserManage";
+            UserManage.ReadOnly = true;
+            UserManage.Width = 120;
+            // 
+            // CountManage
+            // 
+            CountManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            CountManage.DataPropertyName = "CountManage";
+            CountManage.HeaderText = "产量管理";
+            CountManage.MinimumWidth = 120;
+            CountManage.Name = "CountManage";
+            CountManage.ReadOnly = true;
+            CountManage.Width = 120;
+            // 
+            // Password
+            // 
+            Password.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            Password.DataPropertyName = "Password";
+            Password.HeaderText = "密码";
+            Password.MinimumWidth = 120;
+            Password.Name = "Password";
+            Password.ReadOnly = true;
+            Password.Visible = false;
+            Password.Width = 150;
+            // 
+            // Uid
+            // 
+            Uid.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            Uid.DataPropertyName = "Uid";
+            Uid.HeaderText = "用户id";
+            Uid.MinimumWidth = 120;
+            Uid.Name = "Uid";
+            Uid.ReadOnly = true;
+            Uid.Visible = false;
+            Uid.Width = 150;
+            // 
+            // Aid
+            // 
+            Aid.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
+            Aid.DataPropertyName = "Aid";
+            Aid.HeaderText = "权限id";
+            Aid.MinimumWidth = 120;
+            Aid.Name = "Aid";
+            Aid.ReadOnly = true;
+            Aid.Visible = false;
+            Aid.Width = 150;
             // 
             // flowLayoutPanel1
             // 
@@ -332,107 +446,6 @@
             uiTextBox2.Text = "uiTextBox2";
             uiTextBox2.TextAlignment = ContentAlignment.MiddleLeft;
             uiTextBox2.Watermark = "";
-            // 
-            // selectCheck
-            // 
-            selectCheck.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            selectCheck.HeaderText = "选择";
-            selectCheck.MinimumWidth = 75;
-            selectCheck.Name = "selectCheck";
-            selectCheck.ReadOnly = true;
-            selectCheck.Width = 75;
-            // 
-            // UserName
-            // 
-            UserName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            UserName.HeaderText = "姓名";
-            UserName.MinimumWidth = 50;
-            UserName.Name = "UserName";
-            UserName.ReadOnly = true;
-            // 
-            // Account
-            // 
-            Account.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            Account.HeaderText = "账号";
-            Account.MinimumWidth = 120;
-            Account.Name = "Account";
-            Account.ReadOnly = true;
-            Account.Width = 120;
-            // 
-            // IoManage
-            // 
-            IoManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            IoManage.HeaderText = "IO管理";
-            IoManage.MinimumWidth = 120;
-            IoManage.Name = "IoManage";
-            IoManage.ReadOnly = true;
-            IoManage.Width = 120;
-            // 
-            // CameraManage
-            // 
-            CameraManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            CameraManage.HeaderText = "相机管理";
-            CameraManage.MinimumWidth = 120;
-            CameraManage.Name = "CameraManage";
-            CameraManage.ReadOnly = true;
-            CameraManage.Width = 120;
-            // 
-            // LogManage
-            // 
-            LogManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            LogManage.HeaderText = "日志管理";
-            LogManage.MinimumWidth = 120;
-            LogManage.Name = "LogManage";
-            LogManage.ReadOnly = true;
-            LogManage.Width = 120;
-            // 
-            // UserManage
-            // 
-            UserManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            UserManage.HeaderText = "用户管理";
-            UserManage.MinimumWidth = 120;
-            UserManage.Name = "UserManage";
-            UserManage.ReadOnly = true;
-            UserManage.Width = 120;
-            // 
-            // CountManage
-            // 
-            CountManage.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            CountManage.HeaderText = "产量管理";
-            CountManage.MinimumWidth = 120;
-            CountManage.Name = "CountManage";
-            CountManage.ReadOnly = true;
-            CountManage.Width = 120;
-            // 
-            // Password
-            // 
-            Password.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            Password.HeaderText = "密码";
-            Password.MinimumWidth = 120;
-            Password.Name = "Password";
-            Password.ReadOnly = true;
-            Password.Visible = false;
-            Password.Width = 120;
-            // 
-            // Uid
-            // 
-            Uid.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            Uid.HeaderText = "用户id";
-            Uid.MinimumWidth = 120;
-            Uid.Name = "Uid";
-            Uid.ReadOnly = true;
-            Uid.Visible = false;
-            Uid.Width = 120;
-            // 
-            // Aid
-            // 
-            Aid.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            Aid.HeaderText = "权限id";
-            Aid.MinimumWidth = 120;
-            Aid.Name = "Aid";
-            Aid.ReadOnly = true;
-            Aid.Visible = false;
-            Aid.Width = 120;
             // 
             // UserForm
             // 
